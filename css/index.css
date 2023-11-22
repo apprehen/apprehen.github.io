@@ -21250,6 +21250,20 @@ html.hide-aside .layout > div:first-child {
   }
 }
 
+/* live2d样式 */
+#live2d-wripe {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 9999;
+  width: 10%;
+  /* height: 100px; */
+  background-color: transparent !important;
+}
+
+#canvas {
+  background-color: transparent !important;
+}
 #aside-content .card-widget#card-wechat {
   background: #57bd6a;
   display: flex;
