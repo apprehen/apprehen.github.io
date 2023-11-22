@@ -1,4 +1,4 @@
-let cubism4Model = "https://blog-1301952160.cos.ap-shanghai.myqcloud.com/Apprehensive/yueyun_javascript/character/model.json";
+let cubism4Model = window.location.href + "poqi/character/model.json";
 // if (window.screen.width > 1000) {
 (async function main() {
   const body = document.querySelector('body')
