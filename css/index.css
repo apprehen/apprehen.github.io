@@ -21166,6 +21166,10 @@ div#category {
   max-width: 1600px;
 }
 
+#home_top {
+  max-width: 1600px;
+}
+
 .card-widget.card-clock {
   font-size: 14px;
 }
