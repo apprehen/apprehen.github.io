@@ -21170,6 +21170,10 @@ div#category {
   max-width: 1600px;
 }
 
+.author-box {
+  max-width: 1600px;
+}
+
 .card-widget.card-clock {
   font-size: 14px;
 }
