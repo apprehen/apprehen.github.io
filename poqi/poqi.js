@@ -1,5 +1,21 @@
 let cubism4Model = window.location.href + "poqi/character/model.json";
 // if (window.screen.width > 1000) {
+function draggable(model) {
+  model.buttonMode = true;
+  model.on("pointerdown", (e) => {
+    model.dragging = true;
+    model._pointerX = e.data.global.x - model.x;
+    model._pointerY = e.data.global.y - model.y;
+  });
+  model.on("pointermove", (e) => {
+    if (model.dragging) {
+      model.position.x = e.data.global.x - model._pointerX;
+      model.position.y = e.data.global.y - model._pointerY;
+    }
+  });
+  model.on("pointerupoutside", () => (model.dragging = false));
+  model.on("pointerup", () => (model.dragging = false));
+}
 (async function main() {
   const body = document.querySelector('body')
   body.insertAdjacentHTML('beforeend', '<div id="live2d-wripe" style="background-color: transparent"><canvas id="canvas" style="background-color: transparent"><canvas></div>')
@@ -8,7 +24,8 @@ let cubism4Model = window.location.href + "poqi/character/model.json";
     autoStart: true,
     resolution: window.devicePixelRatio || 1,
     antialias: true,
-    transparent: true
+    transparent: true,
+    resizeTo: window,
   });
   const wriper = document.getElementById("live2d-wripe");
   app.renderer.autoResize = true;
@@ -18,25 +35,7 @@ let cubism4Model = window.location.href + "poqi/character/model.json";
   app.stage.width = wriper.clientWidth;
   app.stage.height = wriper.clientWidth;
   model4.scale.set(1.0);
-  function draggable(model) {
-    model.buttonMode = true;
-    model.on("pointerdown", (e) => {
-      model.dragging = true;
-      model._pointerX = e.data.global.x - model.x;
-      model._pointerY = e.data.global.y - model.y;
-    });
-    model.on("pointermove", (e) => {
-      if (model.dragging) {
-        model.position.x = e.data.global.x - model._pointerX;
-        model.position.y = e.data.global.y - model._pointerY;
-      }
-    });
-    model.on("pointerupoutside", () => (model.dragging = false));
-    model.on("pointerup", () => (model.dragging = false));
-  }
-  draggable(model4)
   // 允许拖拽
-  model4.draggable = true;
   model4.on('hit', async (hitAreas) => {
     console.log(hitAreas)
     if (hitAreas.length == 1) {
@@ -60,5 +59,6 @@ let cubism4Model = window.location.href + "poqi/character/model.json";
       }
     }
   })
+  draggable(model4)
 })();
 

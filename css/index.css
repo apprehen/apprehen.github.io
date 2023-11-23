@@ -21256,7 +21256,7 @@ html.hide-aside .layout > div:first-child {
   left: 0;
   bottom: 0;
   z-index: 9999;
-  width: 50px;
+  width: 5vw;
   /* height: 100px; */
   background-color: transparent !important;
 }
