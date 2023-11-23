@@ -21143,7 +21143,7 @@ div#category {
 /* 宽屏适配 */
 .page .layout,
 .post .layout {
-  max-width: 1400px;
+  max-width: 1600px;
 }
 
 .card-widget.card-clock {
@@ -21256,7 +21256,7 @@ html.hide-aside .layout > div:first-child {
   left: 0;
   bottom: 0;
   z-index: 9999;
-  width: 10%;
+  width: 50px;
   /* height: 100px; */
   background-color: transparent !important;
 }
