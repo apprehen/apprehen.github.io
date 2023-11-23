@@ -18,6 +18,23 @@ let cubism4Model = window.location.href + "poqi/character/model.json";
   app.stage.width = wriper.clientWidth;
   app.stage.height = wriper.clientWidth;
   model4.scale.set(1.0);
+  function draggable(model) {
+    model.buttonMode = true;
+    model.on("pointerdown", (e) => {
+      model.dragging = true;
+      model._pointerX = e.data.global.x - model.x;
+      model._pointerY = e.data.global.y - model.y;
+    });
+    model.on("pointermove", (e) => {
+      if (model.dragging) {
+        model.position.x = e.data.global.x - model._pointerX;
+        model.position.y = e.data.global.y - model._pointerY;
+      }
+    });
+    model.on("pointerupoutside", () => (model.dragging = false));
+    model.on("pointerup", () => (model.dragging = false));
+  }
+  draggable(model4)
   // 允许拖拽
   model4.draggable = true;
   model4.on('hit', async (hitAreas) => {
