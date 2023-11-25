@@ -16425,12 +16425,6 @@ li.card-category-list-item {
   -ms-transform: rotate(360deg);
   transform: rotate(360deg);
 }
-#vcomment textarea {
-  background: url("/img/comment_bg.png") 100% 100% no-repeat;
-}
-#vcomment textarea:focus {
-  background-image: none;
-}
 .fireworks {
   position: fixed;
   top: 0;
