@@ -21303,9 +21303,13 @@ div#category {
 .author-box {
   max-width: 1600px;
 }
-#nav.show {
-  padding: 0 calc((100% - 1600px + 3rem) / 2) !important;
-} 
+/* 如果是大屏 */
+@media screen and (min-width: 1600px) {
+  #nav.show {
+    padding: 0 calc((100% - 1600px + 3rem) / 2) !important;
+  } 
+}
+
 
 #nav-group {
   max-width: 1600px !important;
