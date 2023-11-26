@@ -7464,7 +7464,7 @@ body[data-type="link"] #page .page-title {
 #home_top {
   margin: 0 auto 0;
   padding: 0px 1.5rem 0px;
-  max-width: 1600px;
+  max-width: 1400px;
   width: 100%;
   -webkit-animation: slide-in 0.6s 0.1s backwards;
   -moz-animation: slide-in 0.6s 0.1s backwards;
@@ -21245,24 +21245,30 @@ div#category {
   display: inline;
 }
 
+
+/* 宽屏适配 */
 /* 宽屏适配 */
 .page .layout,
 .post .layout {
-  max-width: 1600px;
-}
-
-#home_top {
-  max-width: 1600px;
-}
-
-.author-box {
-  max-width: 1600px;
+  max-width: 1400px;
 }
 /* 如果是大屏 */
 @media screen and (min-width: 1600px) {
   #nav.show {
     padding: 0 calc((100% - 1600px + 3rem) / 2) !important;
   } 
+  .page .layout,
+  .post .layout {
+    max-width: 1600px;
+  }
+
+  #home_top {
+    max-width: 1600px;
+  }
+
+  .author-box {
+    max-width: 1600px;
+  }
 }
 
 
