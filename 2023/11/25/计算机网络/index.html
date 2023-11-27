@@ -59,7 +59,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2023-11-27 16:22:42',
+  postUpdate: '2023-11-27 16:28:33',
   postMainColor: '',
 }</script><noscript><style type="text/css">
   #nav {
@@ -440,7 +440,7 @@ if (true) {
 </li>
 </ol>
 <h3 id="基本流程"><a href="#基本流程" class="headerlink" title="基本流程"></a>基本流程</h3><blockquote>
-<p>访问：<a href="http://www.baidu.com![image-20220428165629557](http://mdrs.yuanjin.tech/img/20220428165634.png)">www.baidu.com![image-20220428165629557](http://mdrs.yuanjin.tech/img/20220428165634.png)</a></p>
+<p>访问：<a href="http://www.baidu.com![image-20220428165629557](https://blog-1301952160.cos.ap-shanghai.myqcloud.com/Apprehensive/post_img/network9.png)">www.baidu.com![image-20220428165629557](https://blog-1301952160.cos.ap-shanghai.myqcloud.com/Apprehensive/post_img/network9.png)</a></p>
 </blockquote>
 <h2 id="AJAX"><a href="#AJAX" class="headerlink" title="AJAX"></a>AJAX</h2><blockquote>
 <p>浏览器本身就具备网络通信的能力，但在早期，浏览器并没有把这个能力开放给JS。</p>
@@ -527,7 +527,7 @@ if (true) {
 <p><code>https://study.duyiedu.com/api/movie</code>的源为<code>https://study.duyiedu.com</code></p>
 <p><code>http://localhost:7001/index.html</code>的源为<code>http://localhost:7001</code></p>
 <p>两个URL地址的源<strong>完全相同</strong>，则称之为<strong>同源</strong>，否则称之为<strong>异源（跨域）</strong></p>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://mdrs.yuanjin.tech/img/202301121634016.png" alt="image-20230112163455982"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://blog-1301952160.cos.ap-shanghai.myqcloud.com/Apprehensive/post_img/network10.png" alt="image-20230112163455982"></p>
 <h3 id="跨域出现的场景"><a href="#跨域出现的场景" class="headerlink" title="跨域出现的场景"></a>跨域出现的场景</h3><p>跨域可能出现在三种场景：</p>
 <ul>
 <li><p><strong>网络通信</strong></p>
@@ -545,16 +545,16 @@ if (true) {
 <h3 id="网络中的跨域"><a href="#网络中的跨域" class="headerlink" title="网络中的跨域"></a>网络中的跨域</h3><p>当浏览器运行页面后，会发出很多的网络请求，例如CSS、JS、图片、AJAX等等</p>
 <p>请求页面的源称之为<strong>页面源</strong>，在该页面中发出的请求称之为<strong>目标源</strong>。</p>
 <p>当页面源和目标源一致时，则为<strong>同源请求</strong>，否则为<strong>异源请求（跨域请求）</strong></p>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://mdrs.yuanjin.tech/img/202301121636551.png" alt="image-20230112163616513"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://blog-1301952160.cos.ap-shanghai.myqcloud.com/Apprehensive/post_img/network11.png" alt="image-20230112163616513"></p>
 <h3 id="浏览器如何限制异源请求？"><a href="#浏览器如何限制异源请求？" class="headerlink" title="浏览器如何限制异源请求？"></a>浏览器如何限制异源请求？</h3><p>浏览器出于多方面的考量，制定了非常繁杂的规则来限制各种跨域请求，但总体的原则非常简单：</p>
 <ul>
 <li>对标签发出的跨域请求轻微限制</li>
 <li>对AJAX发出的跨域请求<strong>严厉限制</strong></li>
 </ul>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://mdrs.yuanjin.tech/img/202301122010888.png" alt="image-20230112201027855"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://blog-1301952160.cos.ap-shanghai.myqcloud.com/Apprehensive/post_img/network12.png" alt="image-20230112201027855"></p>
 <h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><h3 id="CORS"><a href="#CORS" class="headerlink" title="CORS"></a>CORS</h3><p>CORS（Cross-Origin Resource Sharing）是最正统的跨域解决方案，同时也是浏览器推荐的解决方案。</p>
 <p>CORS是一套规则，用于帮助浏览器判断是否校验通过。</p>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://mdrs.yuanjin.tech/img/202301122025029.png" alt="image-20230112202539003"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://blog-1301952160.cos.ap-shanghai.myqcloud.com/Apprehensive/post_img/network13.png" alt="image-20230112202539003"></p>
 <p>CORS的基本理念是：</p>
 <ul>
 <li>只要服务器明确表示<strong>允许</strong>，则校验<strong>通过</strong></li>
@@ -587,11 +587,11 @@ if (true) {
 <h5 id="预检请求-preflight"><a href="#预检请求-preflight" class="headerlink" title="预检请求(preflight)"></a>预检请求(preflight)</h5><p>只要不是简单请求，均为预检请求</p>
 <h5 id="练习"><a href="#练习" class="headerlink" title="练习"></a>练习</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 下面的跨域请求哪些是简单请求，哪些是预检请求</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 1</span></span><br><span class="line"><span class="title function_">fetch</span>(<span class="string">&#x27;https://douyin.com&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 2</span></span><br><span class="line"><span class="title function_">fetch</span>(<span class="string">&#x27;https://douyin.com&#x27;</span>, &#123;</span><br><span class="line">  <span class="attr">headers</span>: &#123;</span><br><span class="line">    <span class="attr">a</span>: <span class="number">1</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 3</span></span><br><span class="line"><span class="title function_">fetch</span>(<span class="string">&#x27;https://douyin.com&#x27;</span>, &#123;</span><br><span class="line">  <span class="attr">method</span>: <span class="string">&#x27;POST&#x27;</span>,</span><br><span class="line">  <span class="attr">body</span>: <span class="title class_">JSON</span>.<span class="title function_">stringify</span>(&#123; <span class="attr">a</span>: <span class="number">1</span>, <span class="attr">b</span>: <span class="number">2</span> &#125;),</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 4</span></span><br><span class="line"><span class="title function_">fetch</span>(<span class="string">&#x27;https://douyin.com&#x27;</span>, &#123;</span><br><span class="line">  <span class="attr">method</span>: <span class="string">&#x27;POST&#x27;</span>,</span><br><span class="line">  <span class="attr">headers</span>: &#123;</span><br><span class="line">    <span class="string">&#x27;content-type&#x27;</span>: <span class="string">&#x27;application/json&#x27;</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">body</span>: <span class="title class_">JSON</span>.<span class="title function_">stringify</span>(&#123; <span class="attr">a</span>: <span class="number">1</span>, <span class="attr">b</span>: <span class="number">2</span> &#125;),</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 
-<h4 id="对简单请求的验证"><a href="#对简单请求的验证" class="headerlink" title="对简单请求的验证"></a>对简单请求的验证</h4><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://mdrs.yuanjin.tech/img/202301122045614.png" alt="image-20230112204546583"></p>
+<h4 id="对简单请求的验证"><a href="#对简单请求的验证" class="headerlink" title="对简单请求的验证"></a>对简单请求的验证</h4><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://blog-1301952160.cos.ap-shanghai.myqcloud.com/Apprehensive/post_img/network14.png" alt="image-20230112204546583"></p>
 <h4 id="对预检请求的验证"><a href="#对预检请求的验证" class="headerlink" title="对预检请求的验证"></a>对预检请求的验证</h4><ol>
 <li>发送预检请求</li>
 </ol>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://mdrs.yuanjin.tech/img/202301122046532.png" alt="image-20230112204634493"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://blog-1301952160.cos.ap-shanghai.myqcloud.com/Apprehensive/post_img/network15.png" alt="image-20230112204634493"></p>
 <ol start="2">
 <li>发送真实请求（和简单请求一致）</li>
 </ol>
@@ -611,9 +611,9 @@ if (true) {
 
 <p>这样JS就能够访问指定的响应头了。</p>
 <h3 id="JSONP"><a href="#JSONP" class="headerlink" title="JSONP"></a>JSONP</h3><p>在很久很久以前…并没有CORS方案</p>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://mdrs.yuanjin.tech/img/202301122054396.png" alt="image-20230112205454350"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://blog-1301952160.cos.ap-shanghai.myqcloud.com/Apprehensive/post_img/network16.png" alt="image-20230112205454350"></p>
 <p>在那个年代，古人靠着非凡的智慧来解决这一问题</p>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://mdrs.yuanjin.tech/img/202301122056031.png" alt="image-20230112205613983"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://blog-1301952160.cos.ap-shanghai.myqcloud.com/Apprehensive/post_img/network17.png" alt="image-20230112205613983"></p>
 <p>虽然可以解决问题，但JSONP有着明显的缺陷：</p>
 <ul>
 <li><p>仅能使用GET请求</p>
@@ -629,19 +629,19 @@ if (true) {
 <p><strong>因此，除非是某些特殊的原因，否则永远不应该使用JSONP</strong></p>
 <h3 id="代理"><a href="#代理" class="headerlink" title="代理"></a>代理</h3><p>CORS和JSONP均要求服务器是「自己人」</p>
 <p>那如果不是呢？</p>
-<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://mdrs.yuanjin.tech/img/202301122105697.png" alt="image-20230112210551647" style="zoom:50%;" />
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://blog-1301952160.cos.ap-shanghai.myqcloud.com/Apprehensive/post_img/network18.png" alt="image-20230112210551647" style="zoom:50%;" />
 
 <p>那就找一个中间人（代理）</p>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://mdrs.yuanjin.tech/img/202301151333985.png" alt="image-20230115133326930"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://blog-1301952160.cos.ap-shanghai.myqcloud.com/Apprehensive/post_img/network19.png" alt="image-20230115133326930"></p>
 <p>比如，前端小王想要请求获取王者荣耀英雄数据，但直接请求腾讯服务器会造成跨域</p>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://mdrs.yuanjin.tech/img/202301151337612.png" alt="image-20230115133732560"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://blog-1301952160.cos.ap-shanghai.myqcloud.com/Apprehensive/post_img/network20.png" alt="image-20230115133732560"></p>
 <p>由于腾讯服务器不是「自己人」，小王决定用代理解决</p>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://mdrs.yuanjin.tech/img/202301151338609.png" alt="image-20230115133817554"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://blog-1301952160.cos.ap-shanghai.myqcloud.com/Apprehensive/post_img/network21.png" alt="image-20230115133817554"></p>
 <h3 id="如何选择"><a href="#如何选择" class="headerlink" title="如何选择"></a>如何选择</h3><p>最重要的，是要保持<strong>生产环境和开发环境一致</strong></p>
 <p>下面是一张决策图</p>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://mdrs.yuanjin.tech/img/202301151453393.png" alt="image-20230115145335319"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://blog-1301952160.cos.ap-shanghai.myqcloud.com/Apprehensive/post_img/network22.png" alt="image-20230115145335319"></p>
 <p>具体的几种场景</p>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://mdrs.yuanjin.tech/img/202301151506803.png" alt="image-20230115150610750"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://blog-1301952160.cos.ap-shanghai.myqcloud.com/Apprehensive/post_img/network23.png" alt="image-20230115150610750"></p>
 <p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://mdrs.yuanjin.tech/img/202301151514837.png" alt="image-20230115151406797"></p>
 </article><div class="post-copyright"><div class="copyright-cc-box"><i class="anzhiyufont anzhiyu-icon-copyright"></i></div><div class="post-copyright__author_box"><a class="post-copyright__author_img" href="/" title="头像"><img class="post-copyright__author_img_back" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/yueyun.jpg" title="头像" alt="头像"><img class="post-copyright__author_img_front" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/yueyun.jpg" title="头像" alt="头像"></a><div class="post-copyright__author_name">月晕</div><div class="post-copyright__author_desc">生命是有光的</div></div><div class="post-copyright__post__info"><a class="post-copyright__original" title="该文章为原创文章，注意版权协议" href="http://blog.yueyun.site/2023/11/25/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">原创</a><a class="post-copyright-title"><span onclick="rm.copyPageUrl('http://blog.yueyun.site/2023/11/25/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/')">计算机网络</span></a></div><div class="post-tools" id="post-tools"><div class="post-tools-left"><div class="rewardLeftButton"></div><div class="shareRight"><div class="share-link mobile"><div class="share-qrcode"><div class="share-button" title="使用手机访问这篇文章"><i class="anzhiyufont anzhiyu-icon-qrcode"></i></div><div class="share-main"><div class="share-main-all"><div id="qrcode" title="http://blog.yueyun.site/2023/11/25/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"></div><div class="reward-dec">使用手机访问这篇文章</div></div></div></div></div><script>function copyCurrentPageUrl() {
   var currentPageUrl = window.location.href;
