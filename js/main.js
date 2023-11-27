@@ -1746,7 +1746,7 @@ document.addEventListener("DOMContentLoaded", function () {
     consoleEl = document.getElementById("console");
 
     addDarkModeEventListener("console", ".darkmode_switchbutton");
-
+    addDarkModeEventListener("nav-darkmode", ".darkmode_switchbutton");
     if (GLOBAL_CONFIG_SITE.isPost) {
       GLOBAL_CONFIG.noticeOutdate !== undefined && addPostOutdateNotice();
       GLOBAL_CONFIG.relativeDate.post && relativeDate(document.querySelectorAll("#post-meta time"));
