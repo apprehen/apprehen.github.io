@@ -7478,7 +7478,7 @@ body[data-type="link"] #page .page-title {
     padding: 10px;
   }
   #home_top {
-    padding: 0px 20px 0px;
+    display: none !important;
   }
 }
 div#bannerGroup {
@@ -7488,7 +7488,7 @@ div#bannerGroup {
 }
 @media screen and (max-width: 768px) {
   #home_top {
-    padding: 0px 15px;
+    display: none !important;
   }
   #swiper_container_blog {
     padding: 0 10px;
