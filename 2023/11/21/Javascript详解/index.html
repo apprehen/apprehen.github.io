@@ -59,7 +59,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2023-12-06 14:39:32',
+  postUpdate: '2023-12-09 06:45:22',
   postMainColor: '',
 }</script><noscript><style type="text/css">
   #nav {
@@ -263,7 +263,7 @@ if (true) {
 <p><code>base</code> 的范围可以从 <code>2</code> 到 <code>36</code>。默认情况下是 <code>10</code>。</p>
 <p><strong>舍入</strong></p>
 <ul>
-<li><p>**<code>Math.floor</code>**：向下舍入 </p>
+<li><p><strong><code>Math.floor</code></strong>: 向下舍入 </p>
 </li>
 <li><p><strong><code>Math.ceil</code></strong>: 向上舍入</p>
 </li>
@@ -311,9 +311,9 @@ if (true) {
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">alert</span>( <span class="built_in">parseInt</span>(<span class="string">&#x27;0xff&#x27;</span>, <span class="number">16</span>) ); <span class="comment">// 255</span></span><br><span class="line"><span class="title function_">alert</span>( <span class="built_in">parseInt</span>(<span class="string">&#x27;ff&#x27;</span>, <span class="number">16</span>) ); <span class="comment">// 255，没有 0x 仍然有效</span></span><br><span class="line"><span class="title function_">alert</span>( <span class="built_in">parseInt</span>(<span class="string">&#x27;2n9c&#x27;</span>, <span class="number">36</span>) ); <span class="comment">// 123456</span></span><br></pre></td></tr></table></figure>
 
 <p><strong>其他数学函数：</strong></p>
-<p>**<code>Math.random()</code>**：返回一个从 0 到 1 的随机数（不包括 1</p>
+<p><strong><code>Math.random()</code>：</strong>返回一个从 0 到 1 的随机数（不包括 1</p>
 <p><strong><code>Math.max(a, b, c...)和Math.min(a, b, c...)</code>：</strong> 从任意数量的参数中返回最大值和最小值。</p>
-<p>**<code>Math.pow(n, power)</code>**：返回 <code>n</code> 的给定（power）次幂。</p>
+<p><strong><code>Math.pow(n, power)</code>：</strong>返回 <code>n</code> 的给定（power）次幂。</p>
 <p><strong><code>Math.sqrt(100)</code>：</strong> 取根号</p>
 <h3 id="String"><a href="#String" class="headerlink" title="String"></a>String</h3><ul>
 <li><strong>单引号：</strong> <code>let str = &#39;hello&#39;</code></li>
@@ -437,7 +437,7 @@ if (true) {
 <p>创建 bigint 的方式有两种：在一个整数字面量后面加 <code>n</code> 或者调用 <code>BigInt</code> 函数，该函数从字符串、数字等中生成 bigint。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> bigint = <span class="number">1234567890123456789012345678901234567890n</span>;</span><br><span class="line"><span class="keyword">const</span> sameBigint = <span class="title class_">BigInt</span>(<span class="string">&quot;1234567890123456789012345678901234567890&quot;</span>);</span><br><span class="line"><span class="keyword">const</span> bigintFromNumber = <span class="title class_">BigInt</span>(<span class="number">10</span>); <span class="comment">// 与 10n 相同</span></span><br></pre></td></tr></table></figure>
 
-<details class="folding-tag" cyan><summary> **基本类型和引用类型** </summary>
+<details class="folding-tag" cyan><summary> 基本类型和引用类型 </summary>
               <div class='content'>
               <ol><li><p><code>Javascript</code>中栈和堆</p><ul><li>栈(<strong>stack</strong>)：自动分配固定大小的内存空间，并由系统自动释放，栈数据结构遵从先进后出的原则</li><li>堆(<strong>heap</strong>)：堆内存，动态分配内存，内存大小不固定，也不会自动释放，堆数据结构是一种无序的树状结构，满足<code>key-value</code>键值对我们只用知道key名，就能通过key查找到对应的value。比较经典的就是书架存书的例子，我们知道书名，就可以找到对应的书籍</li></ul><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://blog-1301952160.cos.ap-shanghai.myqcloud.com/Apprehensive/post_img/javascript1.png"></p></li><li><p>引用类型的引用和复制</p><p><strong>当一个对象变量被复制 —— 引用被复制，而该对象自身并没有被复制。</strong>  </p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a = &#123;<span class="attr">name</span>: <span class="string">&#x27;月晕&#x27;</span>, <span class="attr">age</span>: <span class="number">18</span>&#125;</span><br><span class="line"><span class="keyword">let</span> b = a</span><br><span class="line"><span class="comment">// 这里在堆内存中并没有新new 一份 &#123;name: &#x27;月晕&#x27;, age: 18&#125;,而只是把b的内容地址指向a的地址 指向堆内存中的同一份</span></span><br></pre></td></tr></table></figure></li></ol>
               </div>
@@ -470,7 +470,7 @@ if (true) {
 <p>函数写在对象中称之为对象的方法</p>
 <h5 id="方法中的this"><a href="#方法中的this" class="headerlink" title="方法中的this"></a>方法中的<code>this</code></h5><p>通常, 对象方法需要访问对象中存储的信息才能完成其工作。<br>this会指向一个对象：</p>
 <ul>
-<li>以函数形式调用时、this指向的是widow(浏览器环境)&#x2F;<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/globalThis"><code>globalThis</code></a>(nodejs环境)</li>
+<li>以函数形式调用时、this指向的是widow(浏览器环境)&#x2F;<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/globalThis">globalThis</a>(nodejs环境)</li>
 <li>以方法的形式调用、this指向的是调用方法的对象</li>
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> user = &#123;</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;John&quot;</span>,</span><br><span class="line">    <span class="attr">age</span>: <span class="number">30</span>,</span><br><span class="line">    <span class="title function_">sayHi</span>(<span class="params"></span>) &#123;</span><br><span class="line">        <span class="comment">// this 指的是当前对象 John</span></span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">this</span>.<span class="property">name</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -481,7 +481,7 @@ if (true) {
 <h5 id="箭头函数没有自己的this"><a href="#箭头函数没有自己的this" class="headerlink" title="箭头函数没有自己的this"></a><strong>箭头函数没有自己的<code>this</code></strong></h5><p>箭头函数有些特别：它们没有自己的 <code>this</code>。如果我们在这样的函数中引用 <code>this</code>，<code>this</code> 值取决于外部“正常的”函数。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> user = &#123;</span><br><span class="line">  <span class="attr">firstName</span>: <span class="string">&quot;Ilya&quot;</span>,</span><br><span class="line">  <span class="title function_">sayHi</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="title function_">arrow</span> = (<span class="params"></span>) =&gt; <span class="title function_">alert</span>(<span class="variable language_">this</span>.<span class="property">firstName</span>);</span><br><span class="line">    <span class="title function_">arrow</span>();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line">user.<span class="title function_">sayHi</span>(); <span class="comment">// Ilya</span></span><br></pre></td></tr></table></figure>
 
-<h4 id="可选链？"><a href="#可选链？" class="headerlink" title="可选链？"></a>可选链？</h4><p>可选链**<code>?.</code>** 是一种访问嵌套对象属性的安全的方式，即使中间属性不存在也不会出现错误</p>
+<h4 id="可选链？"><a href="#可选链？" class="headerlink" title="可选链？"></a>可选链？</h4><p>可选链<code>?.</code> 是一种访问嵌套对象属性的安全的方式，即使中间属性不存在也不会出现错误</p>
 <p><strong>不存在属性问题：</strong></p>
 <p>如果我们有很多个 <code>user</code> 对象其中存储了我们的用户数据，我们大多数用户的地址都存储在 <code>user.address</code> 中，街道地址存储在 <code>user.address.street</code> 中，但有些用户没有提供这些信息。在这种情况下，当我们尝试获取 <code>user.address.street</code>，而该用户恰好没提供地址信息，我们则会收到一个错误：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> user = &#123;&#125;; <span class="comment">// 一个没有 &quot;address&quot; 属性的 user 对象</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(user.<span class="property">address</span>.<span class="property">street</span>); <span class="comment">// Error!</span></span><br></pre></td></tr></table></figure>
@@ -500,7 +500,7 @@ if (true) {
 <blockquote>
 <p>如果未声明变量 <code>user</code>，那么 <code>user?.anything</code> 会触发一个错误<br><code>?.</code> 前的变量必须已声明（例如 <code>let/const/var user</code> 或作为一个函数参数）。可选链仅适用于已声明的变量。</p>
 </blockquote>
-<p>当然也存在**<code>?.()</code>** 和 <strong><code>?.[]</code></strong></p>
+<p>当然也存在***<code>?.()</code>** 和 <strong><code>?.[]</code></strong></p>
 <h2 id="Javascript中的方法"><a href="#Javascript中的方法" class="headerlink" title="Javascript中的方法"></a>Javascript中的方法</h2><h3 id="原始类型的方法"><a href="#原始类型的方法" class="headerlink" title="原始类型的方法"></a>原始类型的方法</h3><p><code>string</code> <code>number</code> <code>bigInt</code> <code>boolean</code> <code>symbol</code> <code>null</code> <code>undefined</code> </p>
 <p>比如下面的这样</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> str = <span class="string">&#x27;Hello&#x27;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(str.<span class="title function_">toUpperCase</span>())</span><br></pre></td></tr></table></figure>
