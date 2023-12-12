@@ -4,9 +4,38 @@
   
     
     <entry>
-      <title></title>
-      <link href="/2023/12/12/React/"/>
-      <url>/2023/12/12/React/</url>
+      <title>Vue学习</title>
+      <link href="/2023/12/12/Vue%E6%A1%86%E6%9E%B6/"/>
+      <url>/2023/12/12/Vue%E6%A1%86%E6%9E%B6/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+            <tag> 前端框架 </tag>
+            
+            <tag> Vue </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>React学习</title>
+      <link href="/2023/12/12/React%E6%A1%86%E6%9E%B6/"/>
+      <url>/2023/12/12/React%E6%A1%86%E6%9E%B6/</url>
       
         <content type="html"><![CDATA[]]></content>
       
