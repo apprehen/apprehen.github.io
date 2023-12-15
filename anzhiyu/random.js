@@ -1,3 +1,3 @@
-var posts=["2023/11/21/Javascript详解/","2023/11/20/Linux代理/","2023/11/28/NestJS/","2023/11/21/Nginx基本使用/","2023/12/15/ReactNative/","2023/12/12/React框架/","2023/12/15/React源码分析/","2023/12/14/VScode/","2023/12/12/Vue框架/","2023/11/25/Vue源码分析/","2023/11/25/git使用/","2023/11/20/python爬虫图片/","2023/11/25/打包工具/","2023/11/25/操作系统/","2023/11/25/数据结构/","2023/11/26/浏览器工作原理/","2023/11/25/计算机网络/","2023/12/14/面试题/"];function toRandomPost(){
+var posts=["posts/b79900c3.html","posts/e43d6ac6.html","posts/7251401c.html","posts/7537191c.html","posts/938f2f9c.html","posts/9ac48510.html","posts/49ae955a.html","posts/34b82b37.html","posts/317b894e.html","posts/ea5e4ee3.html","posts/86f0144.html","posts/bca27d91.html","posts/f5cc586d.html","posts/dbeddcc1.html","posts/79666db.html","posts/e28d3347.html","posts/e255a10a.html","posts/8b326882.html"];function toRandomPost(){
     pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);
   };
