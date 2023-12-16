@@ -3,4 +3,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://blog.yueyun.site/sitemap.xml
-Sitemap: https://blog.yueyun.site/baidusitemap.xml
