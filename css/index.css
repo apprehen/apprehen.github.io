@@ -10072,7 +10072,7 @@ h1.page-title + .tag-cloud-list {
   transform: translate(0) translateY(0) translateZ(0) rotate(-10deg) rotateX(0) rotateY(0) rotateZ(0) skew(0) skewY(0) scaleX(1) scaleY(1) scaleZ(1) scale(1);
 }
 #aside-content .card-info .author-info-avatar:hover .avatar-img {
-  filter: blur(0.5px);
+  filter: blur(0.1px);
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
