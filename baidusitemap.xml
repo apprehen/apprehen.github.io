@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://blog.yueyun.site/posts/ac8590ca.html</loc>
-    <lastmod>2024-07-01</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.yueyun.site/posts/9c0aba3e.html</loc>
-    <lastmod>2024-07-01</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.yueyun.site/posts/bca27d91.html</loc>
-    <lastmod>2024-07-01</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.yueyun.site/posts/34b82b37.html</loc>
+    <loc>https://blog.yueyun.site/json/%E4%B8%8A%E7%8F%AD%E6%97%A5%E8%AE%B0.html</loc>
     <lastmod>2024-07-01</lastmod>
   </url>
   <url>
@@ -90,6 +78,18 @@
   </url>
   <url>
     <loc>https://blog.yueyun.site/posts/86f0144.html</loc>
+    <lastmod>2024-07-01</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.yueyun.site/posts/ac8590ca.html</loc>
+    <lastmod>2024-07-01</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.yueyun.site/posts/9c0aba3e.html</loc>
+    <lastmod>2024-07-01</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.yueyun.site/posts/bca27d91.html</loc>
     <lastmod>2024-07-01</lastmod>
   </url>
 </urlset> 
