@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>前端工程化配置，工程能力学习</title>
+      <link href="/posts/262c4a52.html"/>
+      <url>/posts/262c4a52.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="工程治理"><a href="#工程治理" class="headerlink" title="工程治理"></a>工程治理</h1><h2 id="工程管理"><a href="#工程管理" class="headerlink" title="工程管理"></a>工程管理</h2><h3 id="GIT"><a href="#GIT" class="headerlink" title="GIT"></a>GIT</h3><h3 id="monorepo"><a href="#monorepo" class="headerlink" title="monorepo"></a>monorepo</h3><h3 id="依赖管理"><a href="#依赖管理" class="headerlink" title="依赖管理"></a>依赖管理</h3><h2 id="治理度量"><a href="#治理度量" class="headerlink" title="治理度量"></a>治理度量</h2><h3 id="质量"><a href="#质量" class="headerlink" title="质量"></a>质量</h3><ul><li>代码质量</li><li>产物质量</li></ul><h3 id="效率"><a href="#效率" class="headerlink" title="效率"></a>效率</h3><h2 id="代码规范"><a href="#代码规范" class="headerlink" title="代码规范"></a>代码规范</h2><h3 id="Eslint"><a href="#Eslint" class="headerlink" title="Eslint"></a>Eslint</h3><h3 id="Prettier"><a href="#Prettier" class="headerlink" title="Prettier"></a>Prettier</h3><h3 id="Husky"><a href="#Husky" class="headerlink" title="Husky"></a>Husky</h3><h1 id="编译构建"><a href="#编译构建" class="headerlink" title="编译构建"></a>编译构建</h1><h2 id="编译构建工具"><a href="#编译构建工具" class="headerlink" title="编译构建工具"></a>编译构建工具</h2><h3 id="Webpack"><a href="#Webpack" class="headerlink" title="Webpack"></a>Webpack</h3><h3 id="Rollup"><a href="#Rollup" class="headerlink" title="Rollup"></a>Rollup</h3><h3 id="Vite"><a href="#Vite" class="headerlink" title="Vite"></a>Vite</h3><h3 id="babel"><a href="#babel" class="headerlink" title="babel"></a>babel</h3><h3 id="其它工具"><a href="#其它工具" class="headerlink" title="其它工具"></a>其它工具</h3><p>esbuild swc bun</p><h2 id="编译规范"><a href="#编译规范" class="headerlink" title="编译规范"></a>编译规范</h2><h3 id="JS-模块化"><a href="#JS-模块化" class="headerlink" title="JS 模块化"></a>JS 模块化</h3><h3 id="CSS-模块化"><a href="#CSS-模块化" class="headerlink" title="CSS 模块化"></a>CSS 模块化</h3><h1 id="CI-CD-流水"><a href="#CI-CD-流水" class="headerlink" title="CI&#x2F;CD 流水"></a>CI&#x2F;CD 流水</h1>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+            <tag> 工程化 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>记录第一次字节实习offer</title>
       <link href="/posts/f576a3fe.html"/>
       <url>/posts/f576a3fe.html</url>
